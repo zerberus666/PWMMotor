@@ -1,0 +1,327 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L proj_transistor:IRLB3034PBF Q1
+U 1 1 618A3800
+P 6500 3600
+F 0 "Q1" H 6300 3800 50  0000 L CNN
+F 1 "IRLB3034PBF" H 6000 3900 50  0000 L CNN
+F 2 "proj_packages:TO254P483X1016X1501-3P" H 7350 3700 50  0001 L CNN
+F 3 "http://www.infineon.com/dgdl/irls3034pbf.pdf?fileId=5546d462533600a401535671b7472707" H 7350 3600 50  0001 L CNN
+F 4 "MOSFET N-Channel 40V 343A HEXFET TO220AB Infineon IRLB3034PBF N-channel MOSFET Transistor, 343 A, 40 V, 3-Pin TO-220AB" H 7350 3500 50  0001 L CNN "Description"
+F 5 "4.83" H 7350 3400 50  0001 L CNN "Height"
+F 6 "Infineon" H 7350 3300 50  0001 L CNN "Manufacturer_Name"
+F 7 "IRLB3034PBF" H 7350 3200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "942-IRLB3034PBF" H 7350 3100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Infineon-IR/IRLB3034PBF?qs=9%252BKlkBgLFf0jZeWnRhawEQ%3D%3D" H 7350 3000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "IRLB3034PBF" H 7350 2900 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/irlb3034pbf/infineon-technologies-ag?region=nac" H 7350 2800 50  0001 L CNN "Arrow Price/Stock"
+	1    6500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U1
+U 1 1 618A545D
+P 4300 3500
+F 0 "U1" H 4300 3825 50  0000 C CNN
+F 1 "PC817" H 4300 3734 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4100 3300 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 4300 3500 50  0001 L CNN
+	1    4300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 618A6A24
+P 2750 3600
+F 0 "J1" H 2668 3275 50  0000 C CNN
+F 1 "PWM_12V_IN" H 2668 3366 50  0000 C CNN
+F 2 "proj_packages:DG142V-5.08-2" H 2750 3600 50  0001 C CNN
+F 3 "~" H 2750 3600 50  0001 C CNN
+	1    2750 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 618A73EE
+P 6900 2650
+F 0 "J3" H 6980 2642 50  0000 L CNN
+F 1 "PWM_24V_OUT" H 6980 2551 50  0000 L CNN
+F 2 "proj_packages:DG142V-5.08-2" H 6900 2650 50  0001 C CNN
+F 3 "~" H 6900 2650 50  0001 C CNN
+	1    6900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 618A82DB
+P 4000 1600
+F 0 "J2" H 3918 1275 50  0000 C CNN
+F 1 "POW_24V" H 3918 1366 50  0000 C CNN
+F 2 "proj_packages:DG142V-5.08-2" H 4000 1600 50  0001 C CNN
+F 3 "~" H 4000 1600 50  0001 C CNN
+	1    4000 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3400 4700 3400
+$Comp
+L Device:R R2
+U 1 1 618C0031
+P 4700 3000
+F 0 "R2" H 4770 3046 50  0000 L CNN
+F 1 "2k7" H 4770 2955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4630 3000 50  0001 C CNN
+F 3 "~" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR03
+U 1 1 618C0D87
+P 4700 2750
+F 0 "#PWR03" H 4700 2600 50  0001 C CNN
+F 1 "+24V" H 4715 2923 50  0000 C CNN
+F 2 "" H 4700 2750 50  0001 C CNN
+F 3 "" H 4700 2750 50  0001 C CNN
+	1    4700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR02
+U 1 1 618C1B37
+P 4400 1450
+F 0 "#PWR02" H 4400 1300 50  0001 C CNN
+F 1 "+24V" H 4415 1623 50  0000 C CNN
+F 2 "" H 4400 1450 50  0001 C CNN
+F 3 "" H 4400 1450 50  0001 C CNN
+	1    4400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 618C21CB
+P 4250 1650
+F 0 "#PWR01" H 4250 1400 50  0001 C CNN
+F 1 "GND" H 4255 1477 50  0000 C CNN
+F 2 "" H 4250 1650 50  0001 C CNN
+F 3 "" H 4250 1650 50  0001 C CNN
+	1    4250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1600 4250 1600
+Wire Wire Line
+	4250 1600 4250 1650
+Wire Wire Line
+	4200 1500 4400 1500
+Wire Wire Line
+	4400 1500 4400 1450
+$Comp
+L Device:R R3
+U 1 1 618C7D76
+P 4700 3800
+F 0 "R3" H 4770 3846 50  0000 L CNN
+F 1 "2k" H 4770 3755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4630 3800 50  0001 C CNN
+F 3 "~" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2750 4700 2850
+Wire Wire Line
+	4700 3150 4700 3400
+Wire Wire Line
+	4600 3600 4700 3600
+Wire Wire Line
+	4700 3600 4700 3650
+Connection ~ 4700 3600
+$Comp
+L power:GND #PWR04
+U 1 1 618CDE50
+P 4700 4050
+F 0 "#PWR04" H 4700 3800 50  0001 C CNN
+F 1 "GND" H 4705 3877 50  0000 C CNN
+F 2 "" H 4700 4050 50  0001 C CNN
+F 3 "" H 4700 4050 50  0001 C CNN
+	1    4700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3950 4700 4050
+Wire Wire Line
+	4700 3600 6100 3600
+$Comp
+L Device:R R1
+U 1 1 618D13F4
+P 3350 3400
+F 0 "R1" V 3143 3400 50  0000 C CNN
+F 1 "560" V 3234 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3280 3400 50  0001 C CNN
+F 3 "~" H 3350 3400 50  0001 C CNN
+	1    3350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR05
+U 1 1 618E8491
+P 6500 1600
+F 0 "#PWR05" H 6500 1450 50  0001 C CNN
+F 1 "+24V" H 6515 1773 50  0000 C CNN
+F 2 "" H 6500 1600 50  0001 C CNN
+F 3 "" H 6500 1600 50  0001 C CNN
+	1    6500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2750 6700 2750
+Wire Wire Line
+	6700 2650 6500 2650
+$Comp
+L power:GND #PWR06
+U 1 1 618ECC6C
+P 6500 4050
+F 0 "#PWR06" H 6500 3800 50  0001 C CNN
+F 1 "GND" H 6505 3877 50  0000 C CNN
+F 2 "" H 6500 4050 50  0001 C CNN
+F 3 "" H 6500 4050 50  0001 C CNN
+	1    6500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3500 3200 3400
+Wire Wire Line
+	2950 3600 4000 3600
+Wire Wire Line
+	3500 3400 4000 3400
+Wire Wire Line
+	2950 3500 3200 3500
+Wire Wire Line
+	6500 2750 6500 3000
+Wire Wire Line
+	6500 3900 6500 4050
+Wire Wire Line
+	5950 3000 6500 3000
+Connection ~ 6500 3000
+Wire Wire Line
+	6500 3000 6500 3300
+Wire Wire Line
+	5950 2750 5950 3000
+$Comp
+L Device:LED D1
+U 1 1 619136D0
+P 5600 2700
+F 0 "D1" V 5639 2582 50  0000 R CNN
+F 1 "LED" V 5548 2582 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 5600 2700 50  0001 C CNN
+F 3 "~" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61914254
+P 5600 2350
+F 0 "R4" H 5670 2396 50  0000 L CNN
+F 1 "4k7" H 5670 2305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5530 2350 50  0001 C CNN
+F 3 "~" H 5600 2350 50  0001 C CNN
+	1    5600 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2850 5600 3000
+Wire Wire Line
+	5600 3000 5950 3000
+Connection ~ 5950 3000
+Wire Wire Line
+	5600 2500 5600 2550
+Wire Wire Line
+	5600 2200 5600 2100
+Wire Wire Line
+	5600 2100 5950 2100
+Wire Wire Line
+	6500 1600 6500 2100
+Connection ~ 6500 2100
+Wire Wire Line
+	6500 2100 6500 2650
+Wire Wire Line
+	5950 2100 5950 2450
+Connection ~ 5950 2100
+Wire Wire Line
+	5950 2100 6500 2100
+$Comp
+L Device:C C1
+U 1 1 61925486
+P 5250 2550
+F 0 "C1" H 5365 2596 50  0000 L CNN
+F 1 "0.1" H 5365 2505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 5288 2400 50  0001 C CNN
+F 3 "~" H 5250 2550 50  0001 C CNN
+	1    5250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2400 5250 2100
+Wire Wire Line
+	5250 2100 5600 2100
+Connection ~ 5600 2100
+Wire Wire Line
+	5250 2700 5250 3000
+Wire Wire Line
+	5250 3000 5600 3000
+Connection ~ 5600 3000
+$Comp
+L Device:C C2
+U 1 1 619280BD
+P 6800 3250
+F 0 "C2" H 6915 3296 50  0000 L CNN
+F 1 "0.1" H 6915 3205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6838 3100 50  0001 C CNN
+F 3 "~" H 6800 3250 50  0001 C CNN
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3100 6800 3000
+Wire Wire Line
+	6800 3000 6500 3000
+$Comp
+L power:GND #PWR07
+U 1 1 61929293
+P 6800 4050
+F 0 "#PWR07" H 6800 3800 50  0001 C CNN
+F 1 "GND" H 6805 3877 50  0000 C CNN
+F 2 "" H 6800 4050 50  0001 C CNN
+F 3 "" H 6800 4050 50  0001 C CNN
+	1    6800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3400 6800 4050
+$Comp
+L Diode:1N4004 D2
+U 1 1 6193AA7F
+P 5950 2600
+F 0 "D2" V 5904 2680 50  0000 L CNN
+F 1 "1N4004" V 5995 2680 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5950 2425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5950 2600 50  0001 C CNN
+	1    5950 2600
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

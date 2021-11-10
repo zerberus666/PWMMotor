@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model IRLB3034PBF
+#/326649/400056/2.49/3/4/Transistor
+DEF IRLB3034PBF Q 0 30 Y Y 1 F N
+F0 "Q" 850 300 50 H V L CNN
+F1 "IRLB3034PBF" 850 200 50 H V L CNN
+F2 "TO254P483X1016X1501-3P" 850 100 50 H I L CNN
+F3 "http://www.infineon.com/dgdl/irls3034pbf.pdf?fileId=5546d462533600a401535671b7472707" 850 0 50 H I L CNN
+F4 "MOSFET N-Channel 40V 343A HEXFET TO220AB Infineon IRLB3034PBF N-channel MOSFET Transistor, 343 A, 40 V, 3-Pin TO-220AB" 850 -100 50 H I L CNN "Description"
+F5 "4.83" 850 -200 50 H I L CNN "Height"
+F6 "Infineon" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "IRLB3034PBF" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "942-IRLB3034PBF" 850 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Infineon-IR/IRLB3034PBF?qs=9%252BKlkBgLFf0jZeWnRhawEQ%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "IRLB3034PBF" 850 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/irlb3034pbf/infineon-technologies-ag?region=nac" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X GATE 1 0 0 200 R 50 50 0 0 P
+X DRAIN 2 0 -100 200 R 50 50 0 0 P
+X SOURCE 3 0 -200 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

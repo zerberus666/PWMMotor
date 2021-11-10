@@ -1,0 +1,327 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L proj_transistor:IRLB3034PBF Q?
+U 1 1 618A3800
+P 6500 3600
+F 0 "Q?" H 6300 3800 50  0000 L CNN
+F 1 "IRLB3034PBF" H 6000 3900 50  0000 L CNN
+F 2 "proj_packages:TO254P483X1016X1501-3P" H 7350 3700 50  0001 L CNN
+F 3 "http://www.infineon.com/dgdl/irls3034pbf.pdf?fileId=5546d462533600a401535671b7472707" H 7350 3600 50  0001 L CNN
+F 4 "MOSFET N-Channel 40V 343A HEXFET TO220AB Infineon IRLB3034PBF N-channel MOSFET Transistor, 343 A, 40 V, 3-Pin TO-220AB" H 7350 3500 50  0001 L CNN "Description"
+F 5 "4.83" H 7350 3400 50  0001 L CNN "Height"
+F 6 "Infineon" H 7350 3300 50  0001 L CNN "Manufacturer_Name"
+F 7 "IRLB3034PBF" H 7350 3200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "942-IRLB3034PBF" H 7350 3100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Infineon-IR/IRLB3034PBF?qs=9%252BKlkBgLFf0jZeWnRhawEQ%3D%3D" H 7350 3000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "IRLB3034PBF" H 7350 2900 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/irlb3034pbf/infineon-technologies-ag?region=nac" H 7350 2800 50  0001 L CNN "Arrow Price/Stock"
+	1    6500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U?
+U 1 1 618A545D
+P 4300 3500
+F 0 "U?" H 4300 3825 50  0000 C CNN
+F 1 "PC817" H 4300 3734 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4100 3300 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 4300 3500 50  0001 L CNN
+	1    4300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 618A6A24
+P 2750 3600
+F 0 "J?" H 2668 3275 50  0000 C CNN
+F 1 "PWM_12V_IN" H 2668 3366 50  0000 C CNN
+F 2 "" H 2750 3600 50  0001 C CNN
+F 3 "~" H 2750 3600 50  0001 C CNN
+	1    2750 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 618A73EE
+P 6900 2650
+F 0 "J?" H 6980 2642 50  0000 L CNN
+F 1 "PWM_24V_OUT" H 6980 2551 50  0000 L CNN
+F 2 "" H 6900 2650 50  0001 C CNN
+F 3 "~" H 6900 2650 50  0001 C CNN
+	1    6900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 618A82DB
+P 4000 1600
+F 0 "J?" H 3918 1275 50  0000 C CNN
+F 1 "POW_24V" H 3918 1366 50  0000 C CNN
+F 2 "" H 4000 1600 50  0001 C CNN
+F 3 "~" H 4000 1600 50  0001 C CNN
+	1    4000 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3400 4700 3400
+$Comp
+L Device:R R?
+U 1 1 618C0031
+P 4700 3000
+F 0 "R?" H 4770 3046 50  0000 L CNN
+F 1 "2k7" H 4770 2955 50  0000 L CNN
+F 2 "" V 4630 3000 50  0001 C CNN
+F 3 "~" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 618C0D87
+P 4700 2750
+F 0 "#PWR?" H 4700 2600 50  0001 C CNN
+F 1 "+24V" H 4715 2923 50  0000 C CNN
+F 2 "" H 4700 2750 50  0001 C CNN
+F 3 "" H 4700 2750 50  0001 C CNN
+	1    4700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 618C1B37
+P 4400 1450
+F 0 "#PWR?" H 4400 1300 50  0001 C CNN
+F 1 "+24V" H 4415 1623 50  0000 C CNN
+F 2 "" H 4400 1450 50  0001 C CNN
+F 3 "" H 4400 1450 50  0001 C CNN
+	1    4400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618C21CB
+P 4250 1650
+F 0 "#PWR?" H 4250 1400 50  0001 C CNN
+F 1 "GND" H 4255 1477 50  0000 C CNN
+F 2 "" H 4250 1650 50  0001 C CNN
+F 3 "" H 4250 1650 50  0001 C CNN
+	1    4250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1600 4250 1600
+Wire Wire Line
+	4250 1600 4250 1650
+Wire Wire Line
+	4200 1500 4400 1500
+Wire Wire Line
+	4400 1500 4400 1450
+$Comp
+L Device:R R?
+U 1 1 618C7D76
+P 4700 4100
+F 0 "R?" H 4770 4146 50  0000 L CNN
+F 1 "2k" H 4770 4055 50  0000 L CNN
+F 2 "" V 4630 4100 50  0001 C CNN
+F 3 "~" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2750 4700 2850
+Wire Wire Line
+	4700 3150 4700 3400
+Wire Wire Line
+	4600 3600 4700 3600
+Wire Wire Line
+	4700 3600 4700 3950
+Connection ~ 4700 3600
+$Comp
+L power:GND #PWR?
+U 1 1 618CDE50
+P 4700 4350
+F 0 "#PWR?" H 4700 4100 50  0001 C CNN
+F 1 "GND" H 4705 4177 50  0000 C CNN
+F 2 "" H 4700 4350 50  0001 C CNN
+F 3 "" H 4700 4350 50  0001 C CNN
+	1    4700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4250 4700 4350
+Wire Wire Line
+	4700 3600 6100 3600
+$Comp
+L Device:R R?
+U 1 1 618D13F4
+P 3350 3400
+F 0 "R?" V 3143 3400 50  0000 C CNN
+F 1 "560" V 3234 3400 50  0000 C CNN
+F 2 "" V 3280 3400 50  0001 C CNN
+F 3 "~" H 3350 3400 50  0001 C CNN
+	1    3350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 618E8491
+P 6500 1600
+F 0 "#PWR?" H 6500 1450 50  0001 C CNN
+F 1 "+24V" H 6515 1773 50  0000 C CNN
+F 2 "" H 6500 1600 50  0001 C CNN
+F 3 "" H 6500 1600 50  0001 C CNN
+	1    6500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2750 6700 2750
+Wire Wire Line
+	6700 2650 6500 2650
+$Comp
+L power:GND #PWR?
+U 1 1 618ECC6C
+P 6500 4350
+F 0 "#PWR?" H 6500 4100 50  0001 C CNN
+F 1 "GND" H 6505 4177 50  0000 C CNN
+F 2 "" H 6500 4350 50  0001 C CNN
+F 3 "" H 6500 4350 50  0001 C CNN
+	1    6500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3500 3200 3400
+Wire Wire Line
+	2950 3600 4000 3600
+Wire Wire Line
+	3500 3400 4000 3400
+Wire Wire Line
+	2950 3500 3200 3500
+Wire Wire Line
+	6500 2750 6500 3000
+Wire Wire Line
+	6500 3900 6500 4350
+Wire Wire Line
+	5950 3000 6500 3000
+Connection ~ 6500 3000
+Wire Wire Line
+	6500 3000 6500 3300
+Wire Wire Line
+	5950 2750 5950 3000
+$Comp
+L Device:LED D?
+U 1 1 619136D0
+P 5600 2700
+F 0 "D?" V 5639 2582 50  0000 R CNN
+F 1 "LED" V 5548 2582 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 5600 2700 50  0001 C CNN
+F 3 "~" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61914254
+P 5600 2350
+F 0 "R?" H 5670 2396 50  0000 L CNN
+F 1 "4k7" H 5670 2305 50  0000 L CNN
+F 2 "" V 5530 2350 50  0001 C CNN
+F 3 "~" H 5600 2350 50  0001 C CNN
+	1    5600 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2850 5600 3000
+Wire Wire Line
+	5600 3000 5950 3000
+Connection ~ 5950 3000
+Wire Wire Line
+	5600 2500 5600 2550
+Wire Wire Line
+	5600 2200 5600 2100
+Wire Wire Line
+	5600 2100 5950 2100
+Wire Wire Line
+	6500 1600 6500 2100
+Connection ~ 6500 2100
+Wire Wire Line
+	6500 2100 6500 2650
+Wire Wire Line
+	5950 2100 5950 2450
+Connection ~ 5950 2100
+Wire Wire Line
+	5950 2100 6500 2100
+$Comp
+L Device:C C?
+U 1 1 61925486
+P 5250 2550
+F 0 "C?" H 5365 2596 50  0000 L CNN
+F 1 "0.1" H 5365 2505 50  0000 L CNN
+F 2 "" H 5288 2400 50  0001 C CNN
+F 3 "~" H 5250 2550 50  0001 C CNN
+	1    5250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2400 5250 2100
+Wire Wire Line
+	5250 2100 5600 2100
+Connection ~ 5600 2100
+Wire Wire Line
+	5250 2700 5250 3000
+Wire Wire Line
+	5250 3000 5600 3000
+Connection ~ 5600 3000
+$Comp
+L Device:C C?
+U 1 1 619280BD
+P 7000 3400
+F 0 "C?" H 7115 3446 50  0000 L CNN
+F 1 "0.1" H 7115 3355 50  0000 L CNN
+F 2 "" H 7038 3250 50  0001 C CNN
+F 3 "~" H 7000 3400 50  0001 C CNN
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3250 7000 3000
+Wire Wire Line
+	7000 3000 6500 3000
+$Comp
+L power:GND #PWR?
+U 1 1 61929293
+P 7000 4350
+F 0 "#PWR?" H 7000 4100 50  0001 C CNN
+F 1 "GND" H 7005 4177 50  0000 C CNN
+F 2 "" H 7000 4350 50  0001 C CNN
+F 3 "" H 7000 4350 50  0001 C CNN
+	1    7000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3550 7000 4350
+$Comp
+L Diode:1N4004 D?
+U 1 1 6193AA7F
+P 5950 2600
+F 0 "D?" V 5904 2680 50  0000 L CNN
+F 1 "1N4004" V 5995 2680 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5950 2425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5950 2600 50  0001 C CNN
+	1    5950 2600
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

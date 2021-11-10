@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name IRLB3034PBF)(type Legacy)(uri ${KIPRJMOD}/LIBs/IRLB3034PBF/KiCad/IRLB3034PBF.lib)(options "")(descr ""))
+  (lib (name proj_transistor)(type Legacy)(uri ${KIPRJMOD}/proj_transistor.lib)(options "")(descr ""))
+)
